@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-        }
-    </style>
+  <title>Your Business Name</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { max-width: 800px; margin: auto; padding: 20px; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .footer { text-align: center; margin-top: 60px; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="your_logo.png" alt="Your Business Name" />
-            <h1>Your Business Name</h1>
-            <p>Providing Exclusive Investment Opportunities & Comprehensive Wealth Management Solutions</p>
-        </div>
-
-        <p>Welcome to our firm, where we provide exclusive access to both private and public equity products and comprehensive wealth management. We pride ourselves on our unique position in the market, offering our clients the prestige and potential returns that come with investing alongside a distinguished family.</p>
-
-        <p>Our services go beyond simple wealth management. With our close ties to industry-leading researchers and management, we provide a holistic approach to managing your wealth. Our aim is to be the quarterback of your financial needs, providing solutions tailored specifically to you.</p>
-
-        <div class="footer">
-            <h3>Contact Us</h3>
-            <p>Email: your_email@example.com</p>
-            <p>Phone: your_phone_number</p>
-            <p>Address: your_address</p>
-        </div>
+  <div class="container">
+    <div class="header">
+      <img src="your_logo.png" alt="Your Business Name" />
+      <h1>Your Business Name</h1>
+      <p id="welcome">Welcome to our firm</p>
+      <p>Providing Exclusive Investment Opportunities & Comprehensive Wealth Management Solutions</p>
     </div>
+
+    <p>We provide exclusive access to both private and public equity products and comprehensive wealth management. We pride ourselves on our unique position in the market, offering our clients the prestige and potential returns that come with investing alongside a distinguished family.</p>
+
+    <p>Our services go beyond simple wealth management. With our close ties to industry-leading researchers and management, we provide a holistic approach to managing your wealth. Our aim is to be the quarterback of your financial needs, providing solutions tailored specifically to you.</p>
+
+    <div class="footer">
+      <h3>Contact Us</h3>
+      <p>Email: your_email@example.com</p>
+      <p>Phone: your_phone_number</p>
+      <p>Address: your_address</p>
+    </div>
+  </div>
+
+  <script>
+    var welcomeElement = document.getElementById("welcome");
+    var date = new Date();
+    var hours = date.getHours();
+    if (hours < 12) {
+      welcomeElement.innerHTML += ", Good Morning!";
+    } else if (hours < 18) {
+      welcomeElement.innerHTML += ", Good Afternoon!";
+    } else {
+      welcomeElement.innerHTML += ", Good Evening!";
+    }
+  </script>
 </body>
 </html>
